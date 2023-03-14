@@ -1,0 +1,7 @@
+#Wed Aug 03 18:33:35 IST 2022
+base.0=D\:\\Saratha\\TRAINING\\GLOBAL LOGIC\\downloads\\WEEK 5\\Android-Example-master\\MaterialChipsAndroid\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=D\:\\Saratha\\TRAINING\\GLOBAL LOGIC\\downloads\\WEEK 5\\Android-Example-master\\MaterialChipsAndroid\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out

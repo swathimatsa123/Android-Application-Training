@@ -1,0 +1,163 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.FoodUApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/green_500</item>
+        <item name="colorPrimaryVariant">@color/green_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/pink_200</item>
+        <item name="colorSecondaryVariant">@color/pink_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.FoodUApp.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/green_500</item>
+        <item name="colorPrimaryVariant">@color/green_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/pink_200</item>
+        <item name="colorSecondaryVariant">@color/pink_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <!--  For Splashscreen -->
+    <style name="SplashScreenTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:statusBarColor">?attr/colorSecondary</item>
+    </style>
+
+
+    <!--  For Text -->
+    <style name="MyText.Small" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MyText" parent="TextAppearance.AppCompat.Medium" />
+
+    <style name="MyText.Large" parent="TextAppearance.AppCompat.Large" />
+
+
+    <!--  For Food Item -->
+    <style name="MyText.FoodItem.Title" parent="MyText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/food_item_name</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginStart">@dimen/margin_medium</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+        <item name="android:layout_marginEnd">@dimen/margin_medium</item>
+    </style>
+
+    <style name="MyText.FoodItem.Owner" parent="TextAppearance.AppCompat.Small">
+        <item name="android:text">@string/food_item_owner</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+    </style>
+
+    <style name="MyText.FoodItem.Location" parent="TextAppearance.AppCompat.Small">
+        <item name="android:text">@string/food_item_location</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="MyText.FoodItem.Distance" parent="TextAppearance.AppCompat.Small">
+        <item name="android:text">@string/food_item_distance</item>
+        <item name="android:layout_marginTop">@dimen/margin_smallest</item>
+        <item name="drawableStartCompat">@drawable/ic_pin</item>
+        <item name="android:drawablePadding">@dimen/margin_small</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="FoodItem.RatingBar" parent="@style/Widget.AppCompat.RatingBar.Small">
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+    </style>
+
+    <style name="MyText.FoodItem.Cost" parent="MyText">
+        <item name="android:text">@string/food_item_cost</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+    </style>
+
+
+    <!-- For About -->
+    <style name="MyText.About.WithBackground" parent="MyText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">@dimen/padding_large</item>
+        <item name="android:drawablePadding">@dimen/padding_medium</item>
+        <item name="android:background">@drawable/bg_grey_light_half_rounded</item>
+    </style>
+
+    <style name="MyText.About.WithBackground.BirthDate" parent="MyText.About.WithBackground">
+        <item name="android:text">@string/creator_birthdate</item>
+        <item name="drawableStartCompat">@drawable/ic_calendar</item>
+    </style>
+
+    <style name="MyText.About.WithBackground.Job" parent="MyText.About.WithBackground">
+        <item name="android:text">@string/creator_job</item>
+        <item name="drawableStartCompat">@drawable/ic_work</item>
+        <item name="android:layout_marginTop">@dimen/margin_medium</item>
+    </style>
+
+    <style name="MyText.About.WithBackground.Email" parent="MyText.About.WithBackground">
+        <item name="android:text">@string/creator_email</item>
+        <item name="drawableStartCompat">@drawable/ic_email</item>
+        <item name="android:layout_marginTop">@dimen/margin_medium</item>
+    </style>
+
+
+    <!--  For Buttons -->
+    <style name="MyButton.FoodItem" parent="Widget.MaterialComponents.Button">
+        <item name="android:text">@string/food_item_cta_text</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginBottom">@dimen/margin_small</item>
+    </style>
+
+    <style name="MyButton.Fab" parent="Widget.Design.FloatingActionButton">
+        <item name="android:layout_margin">@dimen/margin_medium</item>
+        <item name="android:src">@drawable/ic_fav</item>
+        <item name="tint">@color/white</item>
+        <item name="layout_anchorGravity">bottom|right</item>
+        <item name="maxImageSize">28dp</item>
+    </style>
+
+
+    <!--  For Detail -->
+    <style name="FoodDetail.Title" parent="MyText.FoodItem.Title">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/margin_large</item>
+        <item name="android:layout_marginStart">@dimen/margin_medium</item>
+        <item name="android:layout_marginEnd">@dimen/margin_medium</item>
+    </style>
+
+    <style name="FoodDetail.Owner" parent="MyText">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginStart">@dimen/margin_medium</item>
+        <item name="android:layout_marginEnd">@dimen/margin_medium</item>
+    </style>
+
+    <style name="FoodDetail.Location" parent="MyText">
+        <item name="android:layout_marginStart">@dimen/margin_small</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="FoodDetail.Description" parent="MyText.FoodItem.Location">
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+        <item name="android:layout_marginStart">@dimen/margin_small</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">5</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+</resources>

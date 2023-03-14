@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Saratha\\TRAINING\\GLOBAL LOGIC\\downloads\\WEEK 5\\Android-Example-master\\MaterialChipsAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "map": [
+                {
+                    "source": "D:\\Saratha\\TRAINING\\GLOBAL LOGIC\\downloads\\WEEK 5\\MultipleLanguageInApp-master\\MultipleLanguageInApp-master\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.1.0-alpha02.aar\\6b8e21db7d421c80965a6fcc5220b54c\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "D:\\Saratha\\TRAINING\\GLOBAL LOGIC\\downloads\\WEEK 5\\MultipleLanguageInApp-master\\MultipleLanguageInApp-master\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.1.0-alpha04.aar\\12984cf746815b330ac39260bf2a3c18\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                }
+            ]
+        }
+    ]
+}

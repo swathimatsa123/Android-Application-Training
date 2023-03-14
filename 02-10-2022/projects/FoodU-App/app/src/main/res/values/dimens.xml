@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_smallest">2dp</dimen>
+    <dimen name="margin_very_small">4dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_xlarge">32dp</dimen>
+
+    <dimen name="padding_smallest">2dp</dimen>
+    <dimen name="padding_very_small">4dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+    <dimen name="padding_xlarge">32dp</dimen>
+
+    <dimen name="appbar_layout_height">300dp</dimen>
+
+    <dimen name="bg_title_toolbar_height">100dp</dimen>
+
+    <dimen name="food_item_width">120dp</dimen>
+    <dimen name="food_item_height">140dp</dimen>
+
+    <dimen name="food_item_container_size">210dp</dimen>
+    <dimen name="food_item_bg_size">190dp</dimen>
+    <dimen name="food_detail_location_width">195dp</dimen>
+
+    <dimen name="food_detail_cover_height">260dp</dimen>
+
+    <dimen name="about_logo_size">45dp</dimen>
+
+    <dimen name="detail_btn_width">80dp</dimen>
+    <dimen name="detail_btn_height">60dp</dimen>
+</resources>

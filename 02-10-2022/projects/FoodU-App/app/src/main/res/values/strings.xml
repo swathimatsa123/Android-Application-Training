@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">FoodU App</string>
+
+    <string name="food_item_name">Food Name</string>
+    <string name="food_item_owner">Warung Mas Pur</string>
+    <string name="food_item_location">Semarang city, Indonesia</string>
+    <string name="food_item_description">Delicious food</string>
+    <string name="food_item_distance">12,3 KM</string>
+    <string name="food_item_cost">12.000 IDR</string>
+    <string name="food_item_cta_text">Look Detail</string>
+    <string name="address_headline_text">Address</string>
+    <string name="description_headline_text">Description</string>
+    <string name="detail_order_success_message">Order added
+!</string>
+    <string name="detail_order_error_message">Enter the amount first
+!</string>
+    <string name="detail_total_order">Total: 0</string>
+
+    <string name="menu_item_about_me">About Me</string>
+
+    <string name="creator_name">XXXX</string>
+    <string name="creator_email">XXX@gmail.com</string>
+    <string name="creator_birthdate">29 September 2022</string>
+    <string name="creator_job">Trainer</string>
+    <string name="about_social_media_headline">Social Media</string>
+    <string name="linkedin_link">https://www.linkedin.com/in/sample</string>
+    <string name="instagram_link">https://www.instagram.com/sample/</string>
+    <string name="github_link">https://www.github.com/sample/</string>
+
+    <string name="appreciation_text">Thank you
+</string>
+    <string name="copyright_text">© All rights reserved.</string>
+    <string name="detail_btn_subtract_text">-</string>
+    <string name="detail_btn_add_text">+</string>
+    <string name="detail_cta_text">Add to cart
+</string>
+</resources>

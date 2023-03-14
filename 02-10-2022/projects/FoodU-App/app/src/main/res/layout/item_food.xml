@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/food_item_container_size"
+    android:layout_marginBottom="@dimen/margin_small">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_grey_light_rounded"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_item_food_cover"
+        android:layout_width="@dimen/food_item_width"
+        android:layout_height="@dimen/food_item_height"
+        android:layout_marginStart="@dimen/margin_small"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bg_food"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_item_food_title"
+        style="@style/MyText.FoodItem.Title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_item_food_cover"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/tv_item_food_owner"
+        style="@style/MyText.FoodItem.Owner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/tv_item_food_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_item_food_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_food_title" />
+
+    <TextView
+        android:id="@+id/tv_item_food_location"
+        style="@style/MyText.FoodItem.Location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/tv_item_food_owner"
+        app:layout_constraintStart_toStartOf="@+id/tv_item_food_owner"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_food_owner" />
+
+    <RatingBar
+        android:id="@+id/rb_item_food_rating"
+        style="@style/FoodItem.RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/iv_item_food_cover"
+        app:layout_constraintStart_toStartOf="@+id/iv_item_food_cover"
+        app:layout_constraintTop_toBottomOf="@+id/iv_item_food_cover"
+        tools:rating="3" />
+
+    <TextView
+        android:id="@+id/tv_item_food_distance"
+        style="@style/MyText.FoodItem.Distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tv_item_food_location"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_food_location" />
+
+    <TextView
+        android:id="@+id/tv_item_food_cost"
+        style="@style/MyText.FoodItem.Cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/rb_item_food_rating"
+        app:layout_constraintStart_toStartOf="@+id/rb_item_food_rating"
+        app:layout_constraintTop_toBottomOf="@+id/rb_item_food_rating" />
+
+    <Button
+        android:id="@+id/btn_item_food_cta"
+        style="@style/MyButton.FoodItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_item_food_cost"
+        app:layout_constraintEnd_toEndOf="@+id/tv_item_food_location"
+        app:layout_constraintTop_toTopOf="@+id/tv_item_food_cost" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

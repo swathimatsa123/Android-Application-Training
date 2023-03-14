@@ -1,0 +1,55 @@
+language: android
+dist: trusty
+env:
+  global:
+    - ANDROID_API_LEVEL=28
+    - ANDROID_BUILD_TOOLS_VERSION=28.0.3
+    - ANDROID_ABI=armeabi-v7a
+android:
+  components:
+    - tools
+    - platform-tools
+    - build-tools-28.0.3
+    - android-28
+    - extra-android-m2repository
+    - $ANDROID_TARGET
+    - sys-img-${ANDROID_ABI}-${ANDROID_TARGET}
+  licenses:
+    - 'android-sdk-preview-license-52d11cd2'
+    - 'android-sdk-license-.+'
+    - 'google-gdk-license-.+'
+
+before_install:
+  - touch $HOME/.android/repositories.cfg
+  - yes | sdkmanager "platforms;android-28"
+  - yes | sdkmanager "build-tools;28.0.3"
+  - curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+  - sudo apt-get install nodejs
+  - sudo apt-get install build-essential
+  - sudo npm install -g danger@10.x
+  - curl -s "https://raw.githubusercontent.com/danger/kotlin/master/scripts/install.sh" | bash
+  - source ~/.bash_profile
+
+before_cache:
+  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+
+cache:
+  directories:
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
+    - $HOME/.android/build-cache
+
+before_script:
+  - chmod +x gradlew
+  - sudo chmod -R a+rwx /usr/local/
+
+script:
+  #- ./gradlew runChecksForDanger
+  - ./gradlew build jacocoDebugUnitTestReport
+  -  danger-kotlin ci
+  #- gem install danger-jacoco
+  #- bundle exec danger
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash) -t 06eb5559-6e59-48a5-be6d-d66344371c60

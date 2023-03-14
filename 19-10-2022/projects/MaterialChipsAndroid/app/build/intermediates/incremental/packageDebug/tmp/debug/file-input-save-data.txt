@@ -1,0 +1,11 @@
+#Internal package file, do not edit.
+#Tue Aug 02 23:29:20 IST 2022
+1.base=D\:\\Saratha\\TRAINING\\GLOBAL LOGIC\\downloads\\WEEK 5\\Android-Example-master\\MaterialChipsAndroid\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out
+0.baseType=DIRECTORY
+1.baseType=DIRECTORY
+count=2
+1.set=DEX
+0.path=classes.dex
+0.set=DEX
+0.base=D\:\\Saratha\\TRAINING\\GLOBAL LOGIC\\downloads\\WEEK 5\\Android-Example-master\\MaterialChipsAndroid\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
+1.path=classes.dex
